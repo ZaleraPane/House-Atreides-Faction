@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Warden -->
+  <PawnKindDef>
+    <defName>PawnKind_AtreidesWarden</defName>
+    <label>Warden Warrior</label>
+    <race>Human</race>
+    <combatPower>250</combatPower>
+    <apparelRequired>
+      <li>PD_Apparel_AtreidesShirt</li>
+      <li>PD_Apparel_WardenArmor</li>
+      <li>PD_Apparel_WardenHelmet</li>
+    </apparelRequired>
+    <forcedTraits>
+      <li><def>Brawler</def></li>
+      <li><def>Tough</def></li>
+    </forcedTraits>
+    <initialResistanceRange>
+      <min>0</min>
+      <max>0</max>
+    </initialResistanceRange>
+    <initialWillRange>
+      <min>0.5</min>
+      <max>0.8</max>
+    </initialWillRange>
+  </PawnKindDef>
+
+  <!-- Soldier -->
+  <PawnKindDef>
+    <defName>PawnKind_AtreidesSoldier</defName>
+    <label>Soldier</label>
+    <race>Human</race>
+    <combatPower>220</combatPower>
+    <apparelRequired>
+      <li>PD_Apparel_AtreidesShirt</li>
+      <li>PD_Apparel_SoldierArmor</li>
+      <li>PD_Apparel_SoldierHelmet</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <initialResistanceRange>
+      <min>0</min>
+      <max>0</max>
+    </initialResistanceRange>
+    <initialWillRange>
+      <min>0.5</min>
+      <max>0.8</max>
+    </initialWillRange>
+  </PawnKindDef>
+
+  <!-- Ranger -->
+  <PawnKindDef>
+    <defName>PawnKind_AtreidesRanger</defName>
+    <label>Ranger Operative</label>
+    <race>Human</race>
+    <combatPower>210</combatPower>
+    <apparelRequired>
+      <li>PD_Apparel_AtreidesShirt</li>
+      <li>PD_Apparel_RangerArmor</li>
+      <li>PD_Apparel_RangerHelmet</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Gun</li>
+      <li>Melee</li>
+    </weaponTags>
+    <forcedTraits>
+      <li><def>Kind</def></li>
+    </forcedTraits>
+    <initialResistanceRange>
+      <min>0</min>
+      <max>0</max>
+    </initialResistanceRange>
+    <initialWillRange>
+      <min>0.5</min>
+      <max>0.8</max>
+    </initialWillRange>
+  </PawnKindDef>
+
+  <!-- Worker -->
+  <PawnKindDef>
+    <defName>PawnKind_AtreidesWorker</defName>
+    <label>Worker</label>
+    <race>Human</race>
+    <combatPower>170</combatPower>
+    <apparelRequired>
+      <li>PD_Apparel_AtreidesShirt</li>
+      <li>PD_Apparel_WorkerArmor</li>
+      <li>PD_Apparel_WorkerHelmet</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <initialResistanceRange>
+      <min>0</min>
+      <max>0</max>
+    </initialResistanceRange>
+    <initialWillRange>
+      <min>0.5</min>
+      <max>0.8</max>
+    </initialWillRange>
+  </PawnKindDef>
+
+</Defs>
+
+

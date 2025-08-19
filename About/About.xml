@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>House Atreides Faction</name>
+  <author>Zalera</author>
+  <packageId>Zalera.HouseAtreidesFaction</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>Collapse.DunesOfRim.Atreides</packageId>
+      <displayName>Dune: Atreides Armour &amp; Weapon Pack</displayName>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Dune: Atreides Armour &amp; Weapon Pack</li>
+  </loadAfter>
+  <description>
+    Adds the noble and disciplined House Atreides from the Dune universe as a new faction in RimWorld.
+
+    This mod includes:
+    - A custom House Atreides faction with honorable ideology and structured military behavior
+    - Four unique Atreides unit types, each equipped with distinct armor from the Dune: Atreides Armor and Weapons mod
+    - Full integration with custom weapons and apparel provided by the dependency mod
+
+    Requires: "Dune - Atreides Armour and Weapon Pack" (Steam ID: 3441453108)
+
+    Created for RimWorld 1.6
+  </description>
+</ModMetaData>

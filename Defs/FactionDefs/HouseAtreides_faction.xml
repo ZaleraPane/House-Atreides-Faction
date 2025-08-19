@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Abstract base faction for House Atreides -->
+  <FactionDef ParentName="OutlanderFactionBase" Name="HouseAtreidesBase" Abstract="True">
+    <pawnSingular>Atreides soldier</pawnSingular>
+    <pawnsPlural>Atreides soldiers</pawnsPlural>
+    <categoryTag>Atreides</categoryTag>
+    <listOrderPriority>25</listOrderPriority>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <factionIconPath>World/WorldObjects/Expanding/TownRough</factionIconPath>
+    <techLevel>Industrial</techLevel>
+    <allowedCultures>
+      <li>Rustican</li>
+    </allowedCultures>
+    <naturalEnemy>true</naturalEnemy>
+    <basicMemberKind>PawnKind_AtreidesSoldier</basicMemberKind>
+
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <PawnKind_AtreidesWarden>8</PawnKind_AtreidesWarden>
+          <PawnKind_AtreidesSoldier>10</PawnKind_AtreidesSoldier>
+          <PawnKind_AtreidesRanger>7</PawnKind_AtreidesRanger>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <PawnKind_AtreidesWorker>5</PawnKind_AtreidesWorker>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+  <!-- Concrete faction: House Atreides -->
+  <FactionDef ParentName="HouseAtreidesBase">
+    <defName>HouseAtreides</defName>
+    <label>House Atreides</label>
+    <description>House Atreides is a noble and strategic faction known for its honor and military prowess.</description>
+    <leaderTitle>Duke</leaderTitle>
+    <colorSpectrum>
+      <li>(0.1, 0.3, 0.1)</li> <!-- Dark forest green -->
+      <li>(0.15, 0.4, 0.15)</li>
+    </colorSpectrum>
+    <factionIconPath>World/WorldObjects/Expanding/TownRough</factionIconPath>
+    <naturalEnemy>true</naturalEnemy>
+
+    <!-- Enable faction to spawn naturally in world gen -->
+    <canMakeRandomly>true</canMakeRandomly>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <hidden>false</hidden>
+
+    <!-- Settlement spawning support -->
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <allowedSettlementTypes>
+      <li>Base</li>
+      <li>Camp</li>
+    </allowedSettlementTypes>
+  </FactionDef>
+
+</Defs>
+
+
